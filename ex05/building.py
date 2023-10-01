@@ -38,13 +38,9 @@ def main():
         if (argc > 2):
             raise AssertionError("more than one argument is provided")
         if (argc == 1):
-            # text = input("What is the text to count?\n")
-            # print("What is the text to count?")
-            # text = sys.stdin.read()
             try:
                 print("What is the text to count?")
                 text = sys.stdin.readline()
-                # text = input("What is the text to count?\n")
             except KeyboardInterrupt:
                 return
         else:

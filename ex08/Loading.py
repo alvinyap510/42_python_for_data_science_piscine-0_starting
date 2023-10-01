@@ -34,7 +34,5 @@ def ft_tqdm(lst: range) -> None:
         sys.stdout.write(
             "\r" + f"{math.floor(i/total * 100)}%" + bar_string + f" {i}/{total}" + f" [{math.floor(elapsed_time / 60):02}:{(math.floor(elapsed_time) % 60):02}<{(math.floor((total-i)/speed / 60)):02}:{(math.floor((total-i)/speed) % 60):02}, {speed:.2f}it/s]")
         sys.stdout.flush()
-        # width_offset = len(bar_string) - (n_bars + 2)
-        # width_offset = 42
 
         yield item
