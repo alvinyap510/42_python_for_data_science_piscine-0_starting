@@ -50,7 +50,6 @@ def ft_tqdm(lst: range) -> None:
                           tqdm_config["closing_char"])
 
             sys.stdout.write(
-                "\r" +
                 f"{math.floor(i/total * 100)}%" +
                 bar_string +
                 f" {i}/{total}" +
@@ -58,7 +57,7 @@ def ft_tqdm(lst: range) -> None:
                 f":{(math.floor(elapsed_time) % 60):02}" +
                 f"<{(math.floor((total-i)/speed / 60)):02}" +
                 f":{(math.floor((total-i)/speed) % 60):02}" +
-                f", {speed:.2f}it/s]")
+                f", {speed:.2f}it/s]\r")
             sys.stdout.flush()
 
             yield item

@@ -1,6 +1,7 @@
 from time import sleep
 from tqdm import tqdm
 from Loading import ft_tqdm
+import sys
 
 for elem in ft_tqdm(range(2000)):
     sleep(0.005)
