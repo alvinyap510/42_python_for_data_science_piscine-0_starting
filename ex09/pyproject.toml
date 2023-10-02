@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "ft_package_alyap"
+version = "0.0.1"
+authors = [
+  { name="alyap", email="alyap@student.42kl.edu.my" },
+]
+description = "42 python for data science piscine's module 00-ex09"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/alvinyap510/42_python_for_data_science_piscine-0_starting"
+"Bug Tracker" = "https://github.com/alvinyap510/42_python_for_data_science_piscine-0_starting/issues"
