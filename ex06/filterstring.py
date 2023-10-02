@@ -24,6 +24,10 @@ def main():
         print(word_filter(argv[1], char_counts))
     except AssertionError as e:
         print(f"AssertionError: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    except KeyboardInterrupt:
+        print("Don't interupt me !!")
 
 
 if __name__ == "__main__":

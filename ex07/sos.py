@@ -56,6 +56,10 @@ def main():
 
     except AssertionError as e:
         print(f"AssertionError: {e}")
+    except Exception as e:
+        print(f"Error: {e}")
+    except KeyboardInterrupt:
+        print("Don't interupt me !!")
 
 
 if __name__ == "__main__":

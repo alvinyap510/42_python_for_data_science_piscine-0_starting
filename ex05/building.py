@@ -3,6 +3,9 @@ import string
 
 
 def count_text(text: str):
+    '''
+    Count the upper / lower / punctuation marks / spaces / digits of a string
+    '''
     letters = 0
     upper_letters = 0
     lower_letters = 0
@@ -33,6 +36,9 @@ def count_text(text: str):
 
 
 def main():
+    '''
+    Do we really need docs for a main?
+    '''
     try:
         argc = len(sys.argv)
         if (argc > 2):
